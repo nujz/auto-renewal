@@ -1,0 +1,28 @@
+{
+  "db": "MySQL",
+  "4d100c81416fcbf7ecdbdd954bb59a4614e54d994f85be629f58960d12119d81": {
+    "describe": {
+      "columns": [
+        {
+          "name": "cid",
+          "ordinal": 0,
+          "type_info": {
+            "char_set": 224,
+            "flags": {
+              "bits": 0
+            },
+            "max_size": 400,
+            "type": "VarString"
+          }
+        }
+      ],
+      "nullable": [
+        true
+      ],
+      "parameters": {
+        "Right": 2
+      }
+    },
+    "query": "\n    select cid from data_user_file where mtype = 1 order by id limit ?,?\n"
+  }
+}
